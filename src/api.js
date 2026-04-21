@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://127.0.0.1:5000";
+const API_URL = "https://digi-flask.vercel.app/";
 
 export const getRULSeries = async (data) => {
   if (data.length < 50) return null;
