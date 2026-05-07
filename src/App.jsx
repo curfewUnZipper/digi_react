@@ -9,6 +9,7 @@ import Residuals from "./pages/Residuals";
 import Forecast from "./pages/Forecast";
 import Metrics from "./pages/Metrics";
 import Logs from "./pages/Logs";
+import MobileNav from "./components/MobileNav";
 
 export default function App() {
 
@@ -66,7 +67,10 @@ export default function App() {
         <Topbar toggleTheme={toggleTheme} />
 
         {renderPage()}
-
+      <MobileNav
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+      />
       </main>
 
     </div>
